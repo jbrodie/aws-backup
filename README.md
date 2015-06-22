@@ -1,6 +1,7 @@
 # aws-backup
 ## Purpose
-To fully automate the backup and exporting of our databases for development and backup usage.
+To fully automate the backup and exporting of our databases for development and backup usage.  The files will then be copied over the defined VPN to an internal server for storage and removed from the export host.
+
 ### Things this does for you.
 1. The script will find the most recent snapshot for the instance you you are setting.
 2. It will then mount this into an RDS instance and return the new DB ENDPOINT for the instance.
@@ -17,3 +18,9 @@ Logs - This is obvious I would think.  This script will log to the console, as w
 
 Sanitizers - These are used to sanitize the database before exporting the developer copies.
 
+
+## Change Log
+June 22 - Initial Release.
+
+## Suggestions
+If you have a suggestion for a change or a bug fix, please fork and submit a pull request.
